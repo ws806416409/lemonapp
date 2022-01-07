@@ -21,7 +21,7 @@ class LemonGameObject {
         this.on_destroy();
 
         for (let i = 0; i < LEMON_GAME_OBJECTS.length; i++) {
-            if(LEMON_GAME_OBJECTS[i] = this) {
+            if(LEMON_GAME_OBJECTS[i] === this) {
                 LEMON_GAME_OBJECTS.splice(i, 1);
                 break;
             }
@@ -42,7 +42,7 @@ let LEMON_GAME_ANIMATION = function(timestamp){
         }
     }
     last_timestamp = timestamp;
-    requestAnimationFrame(LEMON_GAME_ANIMATION); 
+    requestAnimationFrame(LEMON_GAME_ANIMATION);
 }
 
 

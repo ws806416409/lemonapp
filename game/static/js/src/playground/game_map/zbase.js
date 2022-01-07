@@ -13,6 +13,13 @@ class GameMap extends LemonGameObject {
     }
 
     update(){
+        this.render();
+    }
+
+    render(){
+        this.ctx.fillStyle = "rgba(0,0,0, 0.2)";
+        this.ctx.fillRect(0,0, this.ctx.canvas.width, this.ctx.canvas.height);
+
     }
 
 }
