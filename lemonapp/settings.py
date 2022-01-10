@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-))vqopvg@!x-@m6_5tlnmrr#x)s^0e4mj93fxk2k*ft0-#x@tu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["120.27.211.78"]
+ALLOWED_HOSTS = ["120.27.211.78", "limegame.top"]
 
 
 # Application definition
