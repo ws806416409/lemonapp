@@ -19,6 +19,7 @@ class LemonGameMenu{
     </div>
 </div>
 `);
+        this.$menu.hide();
         this.root.$lemon_game.append(this.$menu);
         this.$single_mode = this.$menu.find('.lemon-game-menu-field-item-single-mode');
         this.$multi_mode = this.$menu.find('.lemon-game-menu-field-item-multi-mode');

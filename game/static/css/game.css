@@ -1,3 +1,121 @@
+.lemon-game-settings{
+    width: 100%;
+    height: 100%;
+    background-image: url("/static/image/menu/background.jpg");
+    background-size:100% 100%;
+    user-select:none;
+}
+
+.lemon-game-settings-login{
+    height: 41vh;
+    width: 20vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0, 0.5);
+    border-radius: 5px;
+}
+
+.lemon-game-settings-title{
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.lemon-game-settings-username{
+    display: block;
+    height: 7vh;
+}
+
+.lemon-game-settings-password{
+    display: block;
+    height: 7vh;
+}
+
+.lemom-game-settings-submit{
+    display:block;
+    height: 7vh;
+}
+
+.lemon-game-settings-qq{
+    display: block;
+    height: 7vh;
+}
+
+.lemon-game-settings-item{
+    width:100%;
+    height:10%;
+}
+
+
+.lemon-game-settings-qq > img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.lemon-game-settings-qq > div{
+    color: white;
+    font-size: 1.5vh;
+    text-align: center;
+    display: block;
+}
+
+.lemon-game-settings-item > button{
+    color:purple;
+    width:90%;
+    line-height: 3vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:pink;
+    border-radius: 10px;
+}
+
+.lemon-game-settings-error-messages{
+    color: red;
+    font-size: 0.8vh;
+    display: inline;
+    float: left;
+    padding-left: 1vw;
+}
+
+.lemon-game-settings-option {
+    color: white;
+    font-size: 2vh;
+    display: inline;
+    float: right;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+
+
+.lemon-game-settings-item > input{
+    width:90%;
+    line-height: 3vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lemon-game-settings-register{
+    height: 49vh;
+    width: 20vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0, 0.7);
+    border-radius:5px;
+}
+
 .lemon-game-menu{
     width: 100%;
     height: 100%;
