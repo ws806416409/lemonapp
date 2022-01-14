@@ -33,12 +33,12 @@ class Settings {
             注册
         </div>
         <br>
-        <div class="lemon-game-settings-qq">
-            <img width="30" src="http://120.27.211.78:8000/static/image/settings/qq_logo.png">
+        <div class="lemon-game-settings-github">
+            <img width="30" src="http://120.27.211.78:8000/static/image/settings/github_logo.png">
             <br>
 			<br>
             <div>
-                QQ一键登录
+                GitHub一键登录
             </div>
         </div>
     </div>
@@ -72,12 +72,12 @@ class Settings {
             登录
         </div>
         <br>
-        <div class="lemon-game-settings-qq">
-            <img width="30" src="http://120.27.211.78:8000/static/image/settings/qq_logo.png">
+        <div class="lemon-game-settings-github">
+            <img width="30" src="http://120.27.211.78:8000/static/image/settings/github_logo.png">
             <br>
 			<br>
             <div>
-                QQ一键登录
+                GitHub一键登录
             </div>
         </div>
     </div>
@@ -100,6 +100,8 @@ class Settings {
 		this.$register_login = this.$register.find(".lemon-game-settings-option");
 
         this.$register.hide();
+
+        this.$github_login = this.$settings.find('.lemon-game-settings-github img');
         this.root.$lemon_game.append(this.$settings);
         this.start();
     }
@@ -110,8 +112,13 @@ class Settings {
     }
 
 	add_listening_events(){
+        let outer = this;
 	    this.add_listening_events_login();
         this.add_listening_events_register();
+
+        this.$github_login.click(function(){
+            outer.github_login();
+        });
 	}
 
 	add_listening_events_login(){
@@ -131,6 +138,19 @@ class Settings {
         });
         this.$register_submit.click(function(){
             outer.register_on_remote();
+        });
+    }
+
+    github_login(){
+        $.ajax({
+            url: "http://120.27.211.78:8000/settings/github/web/apply_code/",
+            type: "GET",
+            success: function(resp) {
+                console.log(resp);
+                if(resp.result === "success"){
+                    window.location.replace(resp.apply_code_url);
+                }
+            },
         });
     }
 

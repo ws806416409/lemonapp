@@ -40,7 +40,7 @@
     height: 7vh;
 }
 
-.lemon-game-settings-qq{
+.lemon-game-settings-github{
     display: block;
     height: 7vh;
 }
@@ -51,7 +51,7 @@
 }
 
 
-.lemon-game-settings-qq > img {
+.lemon-game-settings-github > img {
     position: relative;
     top: 50%;
     left: 50%;
@@ -59,7 +59,7 @@
     cursor: pointer;
 }
 
-.lemon-game-settings-qq > div{
+.lemon-game-settings-github > div{
     color: white;
     font-size: 1.5vh;
     text-align: center;
