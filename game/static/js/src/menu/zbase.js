@@ -13,7 +13,7 @@ class LemonGameMenu{
         </div>
         <br>
         <div class="lemon-game-menu-field-item lemon-game-menu-field-item-settings">
-            设置
+            退出
         </div>
         <br>
     </div>
@@ -42,6 +42,7 @@ class LemonGameMenu{
         });
         this.$settings.click(function(){
             console.log("click settings");
+            outer.root.settings.logout_on_remote();
         });
     }
 
