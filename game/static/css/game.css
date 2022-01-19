@@ -162,4 +162,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} 
+}
+
+.footerBox {
+    text-align: center;
+    clear: both;
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+}
+
+.footerBox > a {
+    color: white;
+    hover: white;
+}

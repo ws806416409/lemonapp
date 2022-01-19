@@ -13,12 +13,12 @@ def get_state():
 
 def apply_code(request):
     client_id = "f3474bc0b2f21c82478d"
-    redirect_uri = quote("http://120.27.211.78:8000/settings/github/web/receive_code/")
+    redirect_uri = quote("https://limegame.top/settings/github/web/receive_code/")
     scope = "user"
     state = get_state()
 
     cache.set(state, True, 7200)       #state有效期两小时
-    
+    print(state)
     apply_code_url = "https://github.com/login/oauth/authorize/"
     return JsonResponse({
         'result': "success",
