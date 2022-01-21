@@ -85,7 +85,7 @@ class Settings {
         <div class="footerBox">
              © 2022
            <a href="https://lemonws.top/" title="青柠" target="_blank" class="links" id="copyrightOwner1">王硕</a><span>|</span>
-           <a href="https://beian.miit.gov.cn" title="工业和信息化部域名信息备案管理系统" target="_blank" class="links">皖ICP备2022000739号</a>
+           <a href="https://beian.miit.gov.cn" title="工业和信息化部域名信息备案管理系统" target="_blank" class="links">皖ICP备2022000739号-1</a>
         </div>
     </footer>
 </div>
