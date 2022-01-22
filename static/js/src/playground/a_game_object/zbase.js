@@ -25,6 +25,9 @@ class LemonGameObject {
     update(){       //每一帧执行一次
     }
 
+    late_update(){  //每一帧最后执行一次
+    }
+
     on_destroy(){   //在被销毁之前执行一次
     }
 
@@ -51,6 +54,10 @@ let LEMON_GAME_ANIMATION = function(timestamp){
             obj.timedelta = timestamp - last_timestamp;
             obj.update();
         }
+    }
+    for (let i = 0; i < LEMON_GAME_OBJECTS.length; i++) {
+        let obj = LEMON_GAME_OBJECTS[i];
+        obj.late_update();
     }
     last_timestamp = timestamp;
     requestAnimationFrame(LEMON_GAME_ANIMATION);

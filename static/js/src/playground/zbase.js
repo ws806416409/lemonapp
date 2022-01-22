@@ -42,6 +42,7 @@ class LemonGamePlayground {
         this.mode = mode;
         this.state = "waiting";     //wating-->fighting-->over
         this.notice_board = new NoticeBoard(this);
+        this.score_board = new ScoreBoard(this);
         this.player_count = 0;
 
         this.resize();
@@ -64,6 +65,27 @@ class LemonGamePlayground {
     }
 
     hide(){     //关闭游戏界面
+        while (this.players && this.players.length > 0) {
+            this.players[0].destroy();
+        }
+
+        if (this.game_map) {
+            this.game_map.destroy();
+            this.game_map = null;
+        }
+
+        if (this.notice_board) {
+            this.notice_board.destroy();
+            this.notice_board = null;
+        }
+
+        if (this.score_board) {
+            this.score_board.destroy();
+            this.score_board = null;
+        }
+
+        this.$playground.empty();
+
         this.$playground.hide();
     }
 }
